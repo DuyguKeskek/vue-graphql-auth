@@ -8,6 +8,8 @@ import VueApollo from 'vue-apollo'
 import App from './App'
 import router from './router'
 
+import { GC_USER_ID } from './constants/settings'
+
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -36,10 +38,15 @@ const apolloProvider = new VueApollo({
   }
 })
 
+let userId = localStorage.getItem(GC_USER_ID)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   provide: apolloProvider,
   router,
+  data: {
+    userId
+  },
   render: h => h(App)
 })
