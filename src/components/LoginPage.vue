@@ -35,7 +35,7 @@ import { GC_USER_ID, GC_AUTH_TOKEN } from '../constants/settings'
 import { CREATE_USER_MUTATION, SIGNIN_USER_MUTATION } from '../constants/graphql'
 
 export default {
-  name: 'AppLogin',
+  name: 'LoginPage',
   data () {
     return {
       email: '',
@@ -61,6 +61,7 @@ export default {
           console.log(result)
         }).catch((error) => {
           alert(error)
+          this.$router.push({path: '/login'})
         })
       } else {
         this.$apollo.mutate({
@@ -78,7 +79,7 @@ export default {
           alert(error)
         })
       }
-      this.$router.push({path: '/'})
+      this.$router.push({path: '/home'})
     },
     saveUserData (id, token) {
       localStorage.setItem(GC_USER_ID, id)

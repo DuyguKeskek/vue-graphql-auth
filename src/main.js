@@ -54,7 +54,7 @@ let userId = localStorage.getItem(GC_USER_ID)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  provide: apolloProvider,
+  apolloProvider,
   router,
   data: {
     userId
