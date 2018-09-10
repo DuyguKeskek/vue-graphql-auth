@@ -1,6 +1,6 @@
-# vue-apollo-graphql-authentication
+# vue-apollo-auth
 
-> A Vue.js project
+vue-graphql-auth is a basic authentication template for VueJS apps using GraphQL backend. It allows you to easily setup your own authentication by changing the GraphQL endpoint.
 
 ## Build Setup
 
@@ -13,15 +13,15 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Usage
+
+Cd into src folder. In main.js, simply change `__SIMPLE_API_ENDPOINT__` with your actual GraphQL endpoint.
+
+``` js
+const httpLink = new HttpLink({
+  // You should use an absolute URL here
+  uri: '__SIMPLE_API_ENDPOINT__'
+})
+```
