@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>{{login ? 'Login' : 'Sign Up'}}</h4>
+    <h4>{{login ? 'Login to Your Account' : 'Sign Up'}}</h4>
     <div>
       <b-form-input
         v-show="!login"
@@ -75,8 +75,10 @@ export default {
           const id = result.data.signinUser.user.id
           const token = result.data.signinUser.token
           this.saveUserData(id, token)
+          console.log(result)
         }).catch((error) => {
           alert(error)
+          this.$router.push({ path: '/login' })
         })
       }
       this.$router.push({path: '/home'})
@@ -92,7 +94,7 @@ export default {
 <style>
 .form-control {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
     width: auto;
 }
 </style>
