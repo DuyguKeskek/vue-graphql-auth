@@ -1,9 +1,10 @@
 {
-  "name": "vue-apollo-graphql-authentication",
+  "name": "vue-graphql-auth",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "DuyguKeskek <duygukeskek@hotmail.com>",
+  "description": "Token based email & password authentication template using GraphQL & Apollo Client for VueJS Apps",
+  "author": "duygukeskek <duygukeskek@hotmail.com>",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
