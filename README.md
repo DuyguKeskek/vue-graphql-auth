@@ -1,6 +1,6 @@
-# vue-apollo-auth
+# vue-graphql-auth
 
-vue-graphql-auth is a basic authentication template for VueJS apps using GraphQL backend. It allows you to easily setup your own authentication by changing the GraphQL endpoint.
+vue-graphql-auth is a basic authentication template for VueJS apps using a GraphQL backend. It allows you to easily setup your own authentication by changing the GraphQL endpoint.
 
 ## Build Setup
 
