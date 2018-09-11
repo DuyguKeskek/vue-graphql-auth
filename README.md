@@ -1,6 +1,13 @@
-# vue-graphql-auth
+# [vue-graphql-auth](https://www.npmjs.com/package/vue-graphql-auth)
 
 vue-graphql-auth is a basic authentication template for VueJS apps using a GraphQL backend. It allows you to easily setup your own authentication by changing the GraphQL endpoint.
+
+## Installation
+
+```bash
+# installing the preset package
+npm i vue-graphql-auth --save
+```
 
 ## Build Setup
 
