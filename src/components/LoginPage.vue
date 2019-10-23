@@ -61,7 +61,7 @@ export default {
           console.log(result)
         }).catch((error) => {
           alert(error)
-          this.$router.push({path: '/login'})
+          this.$router.push({ path: '/login' })
         })
       } else {
         this.$apollo.mutate({
@@ -81,7 +81,7 @@ export default {
           this.$router.push({ path: '/login' })
         })
       }
-      this.$router.push({path: '/home'})
+      this.$router.push({ path: '/home' })
     },
     saveUserData (id, token) {
       localStorage.setItem(GC_USER_ID, id)

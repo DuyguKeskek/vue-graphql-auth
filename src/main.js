@@ -49,7 +49,7 @@ const apolloProvider = new VueApollo({
   }
 })
 
-let userId = localStorage.getItem(GC_USER_ID)
+const userId = localStorage.getItem(GC_USER_ID)
 
 /* eslint-disable no-new */
 new Vue({
